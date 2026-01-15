@@ -1,3 +1,6 @@
-const calculator = {};
+export default class Calculator {
+    constructor() {}
 
-export default calculator;
+    add() {}
+
+}

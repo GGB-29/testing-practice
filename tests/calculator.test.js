@@ -1,6 +1,12 @@
-import calculator from '../src/calculator.js'
+import Calculator from '../src/calculator.js'
 
 describe('calculator object', () => {
+    let calculator;
+
+    beforeEach(() => {
+        calculator = new Calculator();
+    });
+    
     test('calculator is an object', () => {
         expect(typeof calculator).toBe('object');
     });

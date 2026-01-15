@@ -28,4 +28,8 @@ describe('capitalize function', () => {
     test('returns empty string when input is empty', () => {
         expect(capitalize('')).toBe('');
     });
+
+    test('does not change string starting with a number', () => {
+        expect(capitalize('1hello')).toBe('1hello');
+    });
 });

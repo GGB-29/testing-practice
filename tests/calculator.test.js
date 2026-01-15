@@ -44,6 +44,6 @@ describe('calculator object', () => {
     });
 
     test('divides two numbers', () => {
-        expect(calculator.divide(2, 5)).toBe(7);
+        expect(calculator.divide(12, 3)).toBe(4);
     });
 });

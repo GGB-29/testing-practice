@@ -12,4 +12,8 @@ describe('capitalize function', () => {
     test('does not change the rest of the string', () => {
         expect(capitalize('javaScript')).toBe('JavaScript');
     });
+
+    test('works with a single character', () => {
+        expect(capitalize('a')).toBe('A');
+    });
 });

@@ -1,3 +1,24 @@
 # Ignore artifacts:
 build
 coverage
+
+node_modules
+dist
+build
+coverage
+.cache
+.tmp
+.out
+.next
+.vercel
+
+*.min.js
+*.bundle.js
+*.lock
+
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+.env
+.env.*

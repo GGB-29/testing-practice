@@ -7,8 +7,12 @@ describe('calculator object', () => {
         calculator = new Calculator();
     });
 
-    test('calculator is an object', () => {
+    test('Calculator class exists', () => {
         expect(typeof calculator).toBe('object');
+    });
+
+    test('calculator is an instance of Calculator', () => {
+        expect(calculator).toBeInstanceOf(Calculator);
     });
 
     test('calculator has add method', () => {

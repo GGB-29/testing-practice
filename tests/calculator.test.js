@@ -50,4 +50,20 @@ describe('calculator object', () => {
     test('dividing by zero returns infinity', () => {
         expect(calculator.divide(12, 0)).toBe(Infinity);
     });
+
+    test('adds two decimal numbers', () => {
+        expect(calculator.add(2.5, 0.1)).toBeCloseTo(2.6);
+    });
+
+    test('subtracts two decimal numbers', () => {
+        expect(calculator.subtract(2.1, 5)).toBeCloseTo(-2.9);
+    });
+
+    test('multiplies two decimal numbers', () => {
+        expect(calculator.multiply(2, 5.5)).toBeCloseTo(11);
+    });
+
+    test('divides two decimal numbers', () => {
+        expect(calculator.divide(12, 5)).toBeCloseTo(2.4);
+    });
 });

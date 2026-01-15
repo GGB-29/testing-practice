@@ -3,4 +3,10 @@ export default class Calculator {
 
     add() {}
 
+    subtract() {}
+
+    multiply() {}
+
+    divide() {}
+
 }

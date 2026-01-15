@@ -12,4 +12,8 @@ describe('reverse string function', () => {
     test('reverses different strings', () => {
         expect(reverseString("Hello there")).toBe("ereht olleH");
     });
+
+    test('returns empty string when input is empty', () => {
+        expect(reverseString('')).toBe('');
+    });
 });

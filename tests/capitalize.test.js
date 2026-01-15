@@ -32,4 +32,8 @@ describe('capitalize function', () => {
     test('does not change string starting with a number', () => {
         expect(capitalize('1hello')).toBe('1hello');
     });
+
+    test('does not change string starting with white space', () => {
+        expect(capitalize(' hello')).toBe(' hello');
+    });
 });

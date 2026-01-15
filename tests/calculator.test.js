@@ -34,4 +34,16 @@ describe('calculator object', () => {
     test('adds two numbers', () => {
         expect(calculator.add(2, 5)).toBe(7);
     });
+
+    test('subtracts two numbers', () => {
+        expect(calculator.subtract(2, 5)).toBe(-3);
+    });
+
+    test('multiplies two numbers', () => {
+        expect(calculator.multiply(2, 5)).toBe(10);
+    });
+
+    test('divides two numbers', () => {
+        expect(calculator.divide(2, 5)).toBe(7);
+    });
 });

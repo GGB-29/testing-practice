@@ -16,4 +16,8 @@ describe('capitalize function', () => {
     test('works with a single character', () => {
         expect(capitalize('a')).toBe('A');
     });
+
+    test('does not change an already capitalized string', () => {
+        expect(capitalize('Hello')).toBe('Hello');
+    });
 });

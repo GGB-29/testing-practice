@@ -4,4 +4,8 @@ describe('reverse string function', () => {
     test('is a function', () => {
         expect(typeof reverseString).toBe('function');
     });
+
+    test('reverses a string', () => {
+        expect(reverseString("Hello world")).toBe("dlrow olleH");
+    })
 });

@@ -20,4 +20,8 @@ describe('capitalize function', () => {
     test('does not change an already capitalized string', () => {
         expect(capitalize('Hello')).toBe('Hello');
     });
+
+    test('handles strings with spaces', () => {
+        expect(capitalize('hello world')).toBe('Hello world');
+    });
 });

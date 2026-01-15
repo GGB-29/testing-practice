@@ -36,4 +36,8 @@ describe('capitalize function', () => {
     test('does not change string starting with white space', () => {
         expect(capitalize(' hello')).toBe(' hello');
     });
+
+    test('capitalizes first unicode character', () => {
+        expect(capitalize('übergrößenträger')).toBe('Übergrößenträger');
+    });
 });

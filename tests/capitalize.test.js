@@ -24,4 +24,8 @@ describe('capitalize function', () => {
     test('handles strings with spaces', () => {
         expect(capitalize('hello world')).toBe('Hello world');
     });
+
+    test('returns empty string when input is empty', () => {
+        expect(capitalize('')).toBe('');
+    });
 });

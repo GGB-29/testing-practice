@@ -30,4 +30,8 @@ describe('calculator object', () => {
     test('calculator has divide method', () => {
         expect(typeof calculator.divide).toBe('function');
     });
+
+    test('adds two numbers', () => {
+        expect(calculator.add(2, 5)).toBe(7);
+    });
 });

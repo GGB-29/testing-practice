@@ -46,4 +46,8 @@ describe('calculator object', () => {
     test('divides two numbers', () => {
         expect(calculator.divide(12, 3)).toBe(4);
     });
+
+    test('dividing by zero returns infinity', () => {
+        expect(calculator.divide(12, 0)).toBe(Infinity);
+    });
 });

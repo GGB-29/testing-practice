@@ -8,4 +8,8 @@ describe('reverse string function', () => {
     test('reverses a string', () => {
         expect(reverseString("Hello world")).toBe("dlrow olleH");
     })
+
+    test('reverses different strings', () => {
+        expect(reverseString("Hello there")).toBe("ereht olleH");
+    });
 });

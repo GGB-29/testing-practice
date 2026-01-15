@@ -1,5 +1,5 @@
-import capitalize from '../src/capitalize';
+import capitalize from '../src/capitalize.js';
 
-test('capitalize function exists', () => {
-    expect(capitalize).toBeDefined();
+test('capitalize is a function', () => {
+    expect(typeof capitalize).toBe('function');
 });
